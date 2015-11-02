@@ -1,0 +1,46 @@
+core.*
+wget-log*
+*~
+.#*
+GTAGS
+GRTAGS
+GPATH
+TAGS
+.dropbox.attr
+doc/html/
+
+# binary file
+libgtest.a
+libgtest_main.a
+bdf2vtk
+fea2vtk
+nodfor
+translate
+libdata.a
+libfunc.a
+libtool.a
+libiodata.a
+dataTest
+funcTest
+iodataTest
+toolTest
+
+
+# ignore eclipse files
+.cproject
+.project
+
+# ignore cmake files
+CMakeCache.txt
+*.cmake
+install_manifest.txt
+Makefile
+CMakeFiles/
+Testing/
+build/
+bin/
+lib/
+
+
+
+

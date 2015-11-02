@@ -1,0 +1,75 @@
+
+ofvtk="structuremesh.vtk"
+offep="structuremesh.fea"
+ofhyb="mesh_input/hybrid-info.dat"
+
+meshsize=
+2 2 2
+
+# style mode1
+style="mode1_center"
+center_point=
+100 100 100
+hight=0.1
+wide=0.1
+depth=0.1
+thick=0.01
+theta=0
+
+# # style mode0
+# style="default"
+# local=
+# 0.0 0.0 0.0
+# localmatx=
+# 1.0 0.0 0.0
+# localmaty=
+# 0.0 1.0 0.0
+# localmatz=
+# 0.0 0.0 1.0
+# corner1=
+#  0.1  0.0  0.0
+# corner2=
+#  0.11  0.0  0.0
+# corner3=
+#  0.11  0.1  0.0
+# corner4=
+#  0.1  0.1  0.0
+# corner5=  
+#  0.1  0.0  0.1
+# corner6=
+#  0.11  0.0  0.1
+# corner7=
+#  0.11  0.1  0.1
+# corner8=
+#  0.1  0.1  0.1
+
+
+
+BC1type=	nh
+BC1CCx=1
+BC1CCy=1
+BC1CCz=1
+BC2type=	nh
+BC2CCx=1
+BC2CCy=1
+BC2CCz=1
+BC3type=h
+BC3CCx=0
+BC3CCy=0
+BC3CCz=0
+BC3wbsubNo.=	1
+BC4type=	h
+BC4CCx=0
+BC4CCy=0
+BC4CCz=0
+BC4wbsubNo.=	2
+BC5type=	nh
+BC5CCx=1
+BC5CCy=1
+BC5CCz=1
+BC6type=	nh
+BC6CCx=1
+BC6CCy=1
+BC6CCz=1
+
+NForce=0

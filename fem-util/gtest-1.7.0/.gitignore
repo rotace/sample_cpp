@@ -1,0 +1,23 @@
+# ignore files
+CHANGES
+Makefile.*
+CONTRIBUTORS
+LICENSE
+README
+aclocal.m4
+build-aux/
+codegear/
+fused-src/
+configure*
+m4/
+make/
+msvc/
+samples/
+scripts/
+xcode/
+
+# not ignore files
+!cmake/
+!include/
+!src/
+!test/

@@ -1,0 +1,92 @@
+
+ofvtk="000acousticmesh.vtk"
+ofwbm="mesh_input/wbm1.wbm"
+
+##### Mesh Data ##
+
+meshsize=
+5 5 5
+
+# style mode1
+style="mode1_front"
+center_point=
+0 0 0
+hight=0.1
+wide=0.1
+depth=0.1
+thick=0.0
+theta=0
+
+# # style mode0
+# style="default"
+# local=
+# 0.0 0.0 0.0
+# localmatx=
+# 1 0 0
+# localmaty=
+# 0 1 0
+# localmatz=
+# 0 0 1
+# corner1=
+#  0.0  0.0  0.0
+# corner2=
+#  0.1  0.0  0.0
+# corner3=
+#  0.1  0.1  0.0
+# corner4=
+#  0.0  0.1  0.0
+# corner5=  
+#  0.0  0.0  0.1
+# corner6=
+#  0.1  0.0  0.1
+# corner7=
+#  0.1  0.1  0.1
+# corner8=
+#  0.0  0.1  0.1
+
+##### WBM Input Data ##
+
+subdomNo= 1
+freqTblInt= 0
+freqTblEnd= 9000
+
+rhoTbl=1.2
+cTbl=340
+nqext=1
+qextTbl1=1
+rqLocal1=
+0 0 0
+nTaTbl=2
+quadTaTbl=1
+quadNPTbl=4
+
+##### Boundary Condition ##
+
+# impedance BC
+BC1type=		Z	
+BC1Z-real= 	10000000	#Inf ... wall
+BC1Z-imag= 	10000000	
+BC2type=		Z	
+BC2Z-real= 	408		#... air
+BC2Z-imag= 	0
+
+# pressure BC
+BC3type=		p
+BC3p-real=	100
+BC3p-imag=	0
+
+# hybrid BC
+BC4type=		h
+
+# periodic BC
+BC5type=		d
+BC5d-real=	300
+BC5d-imag=	0
+BC5departner=	1
+BC5dpartner=	2
+BC6type=		d
+BC6d-real=	300
+BC6d-imag=	0
+BC6departner=	1
+BC6dpartner=	1
+
