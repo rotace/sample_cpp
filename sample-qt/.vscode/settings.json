@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "qtcpserver": "cpp",
+        "qtcpsocket": "cpp"
+    }
+}
